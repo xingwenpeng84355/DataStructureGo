@@ -11,8 +11,6 @@
 #include "Header.h"
 using namespace std;
 
-
-
 int main(int argc, const char * argv[]) {
   
    /* linkList<int> list(5);
@@ -29,8 +27,6 @@ list.append(7);
     list.show();
     */
     
-    
-    
     DlinkLIst<int> list1(1);
 
     list1.append(2);
@@ -40,6 +36,7 @@ list.append(7);
     list1.append(5);
     list1.append(6);
     list1.append(7);
+    list1.append(8);
    // list1.rShow();
   //  cout<<list1.findValue(4)<<endl;
     
