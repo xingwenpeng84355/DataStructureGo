@@ -37,6 +37,8 @@ list.append(7);
     list1.append(6);
     list1.append(7);
     list1.append(8);
+    list1.append(9);
+
    // list1.rShow();
   //  cout<<list1.findValue(4)<<endl;
     
