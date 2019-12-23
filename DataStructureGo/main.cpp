@@ -53,7 +53,7 @@ list.append(7);
 
 */
 
-
+/*
 
     arrStack<int> first(50);
     for(int i=0;i<30;i++){
@@ -65,17 +65,22 @@ list.append(7);
     for(int i=0;i<30;i++){
            
            first.pop();
-           
        }
     cout<<first.isEmpty();
 
+*/
 
-
-
-
-
-
-
+    linkStack<int> lStack(5);
+    for(int i=0;i<50;i++){
+        
+        lStack.push(i);
+        
+    }
+    for(int i=0;i<51;i++){
+        
+        lStack.pop();
+        
+    }
 
     return 0;
 }

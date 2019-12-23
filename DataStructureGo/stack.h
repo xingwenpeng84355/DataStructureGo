@@ -10,19 +10,8 @@
 #define stack_h
 
 
-
 template <class T>
-class stack {
-public:
-    
-   virtual bool pop()=0;
-   virtual bool push(T &tem)=0;
-   virtual bool isEmpty()=0;
-   virtual bool isFull()=0;
-    virtual T getTop()=0;
-
-};
-
+class stack;
 
 template <class T> class arrStack: public stack<T>{
     
@@ -73,9 +62,88 @@ private:
     int top;
 };
 
+template <class T>
+class stack {
+public:
+    
+   virtual bool pop()=0;
+   virtual bool push(T &tem)=0;
+   virtual bool isEmpty()=0;
+   virtual bool isFull()=0;
+    virtual T getTop()=0;
 
+};
 
+template <class T> class Node{
+    
+public:
+    T data;
+    Node<T>* next;
+    Node(){
+        data=-1;
+        next=nullptr;
+    }
+    Node(const T value,Node<T>* nextPtr=nullptr)
+    {
+        data=value;
+    }
+    
+    
+};
 
+template<class T> class linkStack: public stack<T>,public Node<T> {
+    
+public:
+     bool pop(){
+         if(isEmpty()) return false;
+         else{
+             std::cout<<top->data<<std::endl;
+             Node<T>* tem=top;
+             top=top->next;
+             delete tem;
+             size--;
+             return true;
+         }
+    }
+    bool push(T &tem){
+        Node<T>* temp = new Node<T>(tem);
+        temp->next=top;
+        top=temp;
+        size++;
+        return true;
+    }
+     bool isEmpty(){
+         if(size>0)
+         return 0;
+         else return 1;
+     }
+   bool isFull(){
+       return 0;
+        
+    }
+     T getTop()
+    {
+        std::cout<<top->data<<std::endl;
+        return top->data;
+        
+    }
+    
+    linkStack(){
+        size=0;
+        top=nullptr;
+    }
+    linkStack(const T value){
+        top = new Node<T>(value);
+        size=1;
+    }
+    
+    
+    
+    
+private:
+    int size;
+    Node<T>* top;
+};
 
 
 
