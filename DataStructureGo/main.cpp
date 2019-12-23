@@ -8,7 +8,8 @@
 
 
 #include <iostream>
-#include "Header.h"
+#include "DoubleLinkLIst.h"
+#include "stack.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -27,7 +28,7 @@ list.append(7);
     list.show();
     */
     
-    DlinkLIst<int> list1(1);
+   /* DlinkLIst<int> list1(1);
 
     list1.append(2);
 
@@ -49,5 +50,32 @@ list.append(7);
       list1.rShow();
    // list1.setPos(2);
           list1.rShow();
+
+*/
+
+
+
+    arrStack<int> first(50);
+    for(int i=0;i<30;i++){
+        
+        first.push(i);
+        
+    }
+
+    for(int i=0;i<30;i++){
+           
+           first.pop();
+           
+       }
+    cout<<first.isEmpty();
+
+
+
+
+
+
+
+
+
     return 0;
 }
