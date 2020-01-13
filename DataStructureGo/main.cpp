@@ -10,6 +10,11 @@
 #include <iostream>
 #include "DoubleLinkLIst.h"
 #include "stack.h"
+#include <string>
+#include "stdlib.h"
+#include "stdio.h"
+#include "calculatorWithStack.h"
+#include "stackConvert.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -69,7 +74,7 @@ list.append(7);
     cout<<first.isEmpty();
 
 */
-
+/*
     linkStack<int> lStack(5);
     for(int i=0;i<50;i++){
         
@@ -81,6 +86,20 @@ list.append(7);
         lStack.pop();
         
     }
-
+*/
+   
+  /*  calculator<double> cal;
+    cal.input();
+    
+        */
+    nonrec test;
+    int f=0;
+    test.replace1(9, f);
+  
+    cout<<f<<endl;
+  
+    
+    
+    
     return 0;
 }

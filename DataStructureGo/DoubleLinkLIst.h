@@ -17,8 +17,10 @@ template <class T> class link{
 public:
     T data;
     link<T>* next;
+    link();
     link(const T Info,  link<T>* nextValue=nullptr);
     link(link<T>* nextValue);
+    void show();
 };
 
 
@@ -42,12 +44,20 @@ public:
     void show();
 };
 
-
+template <class T>
+void link<T>::show(){
+    data.show();
+}
 
 template <class T>
 link<T>::link(const T Info, link<T>* nextValue){
     data=Info;
     next=nextValue;
+}
+
+template <class T>
+link<T>::link(){
+    
 }
 
 template <class T>
@@ -74,18 +84,11 @@ template<class T> link<T>* linkList<T>::setPos(const int p){
     
     for(int i=0;i<p;i++){
         tem=tem->next;
-        
-    
         if(tem==nullptr) break;
     }
-    
-   
       return tem;
 }
 template<class T> linkList<T>::~linkList(){
-    
-    
-    
 }
  template<class T> bool linkList<T>::isEmpty(){
      if(head->next==nullptr) return true;
