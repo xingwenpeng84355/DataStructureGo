@@ -8,7 +8,7 @@
 
 
 #include <iostream>
-#include "DoubleLinkLIst.h"
+/*#include "DoubleLinkLIst.h"
 #include "stack.h"
 #include <string>
 #include "stdlib.h"
@@ -16,6 +16,8 @@
 #include "calculatorWithStack.h"
 #include "stackConvert.h"
 #include "BST.h"
+ */
+#include "queByStack.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -101,7 +103,7 @@ list.append(7);
   
     
     */
-    bST<int> tree1(100);
+  /*  bST<int> tree1(100);
    tree1.InsertBST();
        tree1.InsertBST();
        tree1.InsertBST();
@@ -116,5 +118,22 @@ list.append(7);
         tree1.showAll();
     tree1.DeleteBST(44);
         tree1.showAll();
+   */
+    
+ 
+    que<int> myQue;
+    myQue.append(10);
+    myQue.append(15);
+    myQue.append(14);
+    myQue.append(16);
+    myQue.append(17);
+    myQue.append(18);
+    myQue.pop();
+    myQue.pop();
+    myQue.pop();
+    myQue.pop();
+    myQue.pop();
+    myQue.pop();
+ 
     return 0;
 }

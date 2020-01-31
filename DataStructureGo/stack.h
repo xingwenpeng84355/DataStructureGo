@@ -38,7 +38,7 @@ public:
             return st[top];
         }
     }
-    bool push( T &tem){
+    bool push( T tem){
         if(isFull()) return false;
         
         else{
@@ -67,7 +67,7 @@ class stack {
 public:
     
    virtual bool pop()=0;
-   virtual bool push(T &tem)=0;
+   virtual bool push(T tem)=0;
    virtual bool isEmpty()=0;
    virtual bool isFull()=0;
     virtual T getTop()=0;
