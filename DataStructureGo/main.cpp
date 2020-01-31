@@ -15,6 +15,7 @@
 #include "stdio.h"
 #include "calculatorWithStack.h"
 #include "stackConvert.h"
+#include "BST.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -92,14 +93,28 @@ list.append(7);
     cal.input();
     
         */
-    nonrec test;
+   /* nonrec test;
     int f=0;
     test.replace1(9, f);
   
     cout<<f<<endl;
   
     
-    
-    
+    */
+    bST<int> tree1(100);
+   tree1.InsertBST();
+       tree1.InsertBST();
+       tree1.InsertBST();
+    tree1.InsertBST();
+     tree1.InsertBST();
+     tree1.InsertBST();
+     tree1.InsertBST();
+    //tree1.showAll();
+    //tree1.showAll();
+ 
+   // tree1.del(tree1.root->rChild,tree1.root,1);
+        tree1.showAll();
+    tree1.DeleteBST(44);
+        tree1.showAll();
     return 0;
 }

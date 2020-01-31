@@ -29,6 +29,7 @@
 		CECE460123B047F60025A6D0 /* DataStructureGo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureGo; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE460423B047F60025A6D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CECE460B23B0482A0025A6D0 /* DoubleLinkLIst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleLinkLIst.h; sourceTree = "<group>"; };
+		CEFEA2AA23E4673B00491A06 /* BST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				CE2E877823B15E8100562126 /* calculatorWithStack.h */,
 				CE2E877723B142BD00562126 /* stack.h */,
 				CECE460B23B0482A0025A6D0 /* DoubleLinkLIst.h */,
+				CEFEA2AA23E4673B00491A06 /* BST.h */,
 			);
 			path = DataStructureGo;
 			sourceTree = "<group>";

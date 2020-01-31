@@ -23,27 +23,6 @@ public:
     void show();
 };
 
-
-template <class T> class linkList{
-    
-private:
-    link<T> *head, *tail;
-    link<T> *setPos(const int p);
-    int length=0;
-public:
-    linkList(const int s);
-    ~linkList();
-    bool isEmpty();
-    void clear();
-    int getLength();
-    bool append(const T value);
-    bool insert(const int p,const T value);
-    bool deleteLink(const int p);
-    T getValue(const int p);
-    int getPos(const int value);
-    void show();
-};
-
 template <class T>
 void link<T>::show(){
     data.show();
@@ -66,10 +45,28 @@ link<T>::link( link<T>* nextValue){
     next=nextValue;
 }
 
+template <class T> class linkList{
+    
+private:
+    link<T> *head, *tail;
+    link<T> *setPos(const int p);
+    int length=0;
+public:
+    linkList(const int s);
+    ~linkList();
+    bool isEmpty();
+    void clear();
+    int getLength();
+    bool append(const T value);
+    bool insert(const int p,const T value);
+    bool deleteLink(const int p);
+    T getValue(const int p);
+    int getPos(const int value);
+    void show();
+};
 
-
-
-template <class T>linkList<T>::linkList(const int s){
+template <class T>
+linkList<T>::linkList(const int s){
    
    head=new link<T> (nullptr);
     head->next=nullptr;
@@ -303,5 +300,9 @@ private:
     DNode<T>* pos;
     
 };
+
+
+
+
 
 #endif /* Header_h */
