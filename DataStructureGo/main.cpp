@@ -20,8 +20,10 @@
 #include "quickSort.h"
 #include "binarySearch.h"
 #include "queByStack.h"
+#include "rotateMatrix.h"
 //#include "hash.h"
 #include "Hash2.h"
+#include "power.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -183,10 +185,18 @@ list.append(7);
      std::cout<<ht.search(4,&ht)<<std::endl;
      ht.show(&ht);
     */
+    /*
     int arr[30]={55,6,3,8,44,76,2345,67,78,54,32,67,89,76,34,56,78,36,58,69,36,26,47,59,36,25,47,64,68,79};
    qSort<int>(arr, 0, 29);
     //Qsort(arr, 0, 29);
     for(int i:arr) cout<<i<<" "<<endl;
+    */
+   /* int arr[30]={36, 44, 47, 47, 54, 55, 56, 58, 59, 64, 67, 67, 68, 69, 76, 76, 78, 78, 79, 340,890, 3, 6, 8, 25, 26, 32, 34, 36, 36 };
+   // Qsort(arr, 0, 29);
+    //for(int i:arr) cout<<i<<" ";
+    rotateMatrix(arr, 30);
+    */
     
+    cout<<power(8, 2);
     return 0;
 }

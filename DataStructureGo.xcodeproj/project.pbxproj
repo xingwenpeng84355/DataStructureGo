@@ -31,6 +31,8 @@
 		CEB281DA23E5D88900A1B3CC /* hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
 		CEB281DB23E5E26700A1B3CC /* Hash2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hash2.h; sourceTree = "<group>"; };
 		CEB281DC23E5EF1000A1B3CC /* quickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
+		CEB281DD23E6103900A1B3CC /* rotateMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotateMatrix.h; sourceTree = "<group>"; };
+		CEB281DE23E61BF200A1B3CC /* power.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = power.h; sourceTree = "<group>"; };
 		CECE460123B047F60025A6D0 /* DataStructureGo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureGo; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE460423B047F60025A6D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CECE460B23B0482A0025A6D0 /* DoubleLinkLIst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleLinkLIst.h; sourceTree = "<group>"; };
@@ -68,9 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				CECE460423B047F60025A6D0 /* main.cpp */,
+				CEB281DE23E61BF200A1B3CC /* power.h */,
 				CEB281DA23E5D88900A1B3CC /* hash.h */,
 				CEB281DB23E5E26700A1B3CC /* Hash2.h */,
 				CEB281DC23E5EF1000A1B3CC /* quickSort.h */,
+				CEB281DD23E6103900A1B3CC /* rotateMatrix.h */,
 				CEB281D923E5B40000A1B3CC /* binarySearch.h */,
 				CE91E7BE23C645E2002D4B93 /* stackConvert.h */,
 				CE2E877823B15E8100562126 /* calculatorWithStack.h */,
