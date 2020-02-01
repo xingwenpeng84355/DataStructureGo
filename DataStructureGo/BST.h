@@ -223,6 +223,30 @@ public:
         }
         
     }
+    bool SearchBST(node<T>* root,int key ){
+        
+        node<T>* cur=root;
+        while(cur->data!=key)
+        {
+            if(key>cur->data){
+                
+                cur=cur->rChild;
+                
+                if(cur==nullptr) return false;
+                
+            }
+            else if (key<cur->data)
+            {
+                cur=cur->lChild;
+            if(cur==nullptr) return false;
+                          
+            }
+            
+            
+            
+        }
+        return true;
+    }
     void inOrder(node<T>* root){
         if(root!=nullptr){
             inOrder(root->lChild);

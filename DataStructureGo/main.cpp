@@ -15,9 +15,13 @@
 #include "stdio.h"
 #include "calculatorWithStack.h"
 #include "stackConvert.h"
+  */
 #include "BST.h"
- */
+#include "quickSort.h"
+#include "binarySearch.h"
 #include "queByStack.h"
+//#include "hash.h"
+#include "Hash2.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -103,7 +107,8 @@ list.append(7);
   
     
     */
-  /*  bST<int> tree1(100);
+    /*
+  bST<int> tree1(100);
    tree1.InsertBST();
        tree1.InsertBST();
        tree1.InsertBST();
@@ -116,12 +121,13 @@ list.append(7);
  
    // tree1.del(tree1.root->rChild,tree1.root,1);
         tree1.showAll();
-    tree1.DeleteBST(44);
+    //tree1.DeleteBST(44);
         tree1.showAll();
+    cout<<tree1.SearchBST(tree1.root,44 );
    */
     
  
-    que<int> myQue;
+   /* que<int> myQue;
     myQue.append(10);
     myQue.append(15);
     myQue.append(14);
@@ -134,6 +140,53 @@ list.append(7);
     myQue.pop();
     myQue.pop();
     myQue.pop();
- 
+ */
+  /*  int arr[30]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30};
+    
+   // binarySearch(arr, 0, 29,-2);
+    binarySearchByLoop(arr, 29,4);
+   */
+    /*
+    HashTable<int> ht;
+    
+    init(10, &ht);
+    insert(15, &ht);
+    insert(5, &ht);
+    insert(6, &ht);
+    insert(10, &ht);
+    insert(33, &ht);
+    insert(44, &ht);
+    insert(24, &ht);
+    insert(54, &ht);
+    insert(66, &ht);
+    insert(77, &ht);
+    insert(100, &ht);
+    std::cout<<search(44,&ht)<<std::endl;
+    std::cout<<search(4,&ht)<<std::endl;
+    show(&ht);
+     */
+   /* HashTable<int> ht;
+   
+     ht.init(10);
+     ht.insert(15, &ht);
+     ht.insert(5, &ht);
+     ht.insert(6, &ht);
+     ht.insert(10, &ht);
+     ht.insert(33, &ht);
+     ht.insert(44, &ht);
+     ht.insert(24, &ht);
+     ht.insert(54, &ht);
+     ht.insert(66, &ht);
+     ht.insert(77, &ht);
+     ht.insert(100, &ht);
+     std::cout<<ht.search(44,&ht)<<std::endl;
+     std::cout<<ht.search(4,&ht)<<std::endl;
+     ht.show(&ht);
+    */
+    int arr[30]={55,6,3,8,44,76,2345,67,78,54,32,67,89,76,34,56,78,36,58,69,36,26,47,59,36,25,47,64,68,79};
+   qSort<int>(arr, 0, 29);
+    //Qsort(arr, 0, 29);
+    for(int i:arr) cout<<i<<" "<<endl;
+    
     return 0;
 }
