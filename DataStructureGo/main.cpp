@@ -8,8 +8,8 @@
 
 
 #include <iostream>
-/*#include "DoubleLinkLIst.h"
-#include "stack.h"
+#include "DoubleLinkLIst.h"
+/*#include "stack.h"
 #include <string>
 #include "stdlib.h"
 #include "stdio.h"
@@ -24,6 +24,9 @@
 //#include "hash.h"
 #include "Hash2.h"
 #include "power.h"
+#include "bigNumber.h"
+#include "orderM.h"
+#include "reverseLinkLIst.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -197,6 +200,22 @@ list.append(7);
     rotateMatrix(arr, 30);
     */
     
-    cout<<power(8, 2);
+  //  cout<<power(8, 2);
+  // bigNumber(3);
+  /*  int arr[30]={36, 44, 47, 47, 54, 55, 56, 58, 59, 64, 67, 67, 68, 69, 76, 76, 78, 78, 79, 340,890, 3, 6, 8, 25, 26, 32, 34, 36, 36 };
+    Reorder(arr, 30, isEven);
+   */
+    
+    
+    linkList<int> list1(9);
+    list1.append(1);
+    list1.append(2);
+    list1.append(3);
+    list1.append(4);
+    list1.append(5);
+    list1.append(6);
+    list1.show();
+    reverseLinkList<int>(&list1)->show();
+  
     return 0;
 }

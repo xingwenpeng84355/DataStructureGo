@@ -47,7 +47,7 @@ link<T>::link( link<T>* nextValue){
 
 template <class T> class linkList{
     
-private:
+public:
     link<T> *head, *tail;
     link<T> *setPos(const int p);
     int length=0;
