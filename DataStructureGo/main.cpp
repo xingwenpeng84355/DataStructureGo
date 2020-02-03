@@ -27,6 +27,7 @@
 #include "bigNumber.h"
 #include "orderM.h"
 #include "reverseLinkLIst.h"
+#include "trees.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -206,7 +207,7 @@ list.append(7);
     Reorder(arr, 30, isEven);
    */
     
-    
+  /*
     linkList<int> list1(9);
     list1.append(1);
     list1.append(2);
@@ -216,6 +217,7 @@ list.append(7);
     list1.append(6);
     list1.show();
     reverseLinkList<int>(&list1)->show();
-  
+   */
+    cout<<findSubTree(setUpTree(),setUpTree2(),setUpTree2());
     return 0;
 }

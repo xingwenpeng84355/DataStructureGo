@@ -36,6 +36,7 @@
 		CEB281DF23E701CC00A1B3CC /* bigNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bigNumber.h; sourceTree = "<group>"; };
 		CEB281E023E71AE900A1B3CC /* orderM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orderM.h; sourceTree = "<group>"; };
 		CEB281E123E725C800A1B3CC /* reverseLinkLIst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverseLinkLIst.h; sourceTree = "<group>"; };
+		CEB281E223E7335F00A1B3CC /* trees.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
 		CECE460123B047F60025A6D0 /* DataStructureGo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureGo; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE460423B047F60025A6D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CECE460B23B0482A0025A6D0 /* DoubleLinkLIst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleLinkLIst.h; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 				CE2E877723B142BD00562126 /* stack.h */,
 				CECE460B23B0482A0025A6D0 /* DoubleLinkLIst.h */,
 				CEFEA2AA23E4673B00491A06 /* BST.h */,
+				CEB281E223E7335F00A1B3CC /* trees.h */,
 				CEB281D823E4D52900A1B3CC /* queByStack.h */,
 			);
 			path = DataStructureGo;
