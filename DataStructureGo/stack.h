@@ -80,7 +80,7 @@ public:
     T data;
     Node<T>* next;
     Node(){
-        data=-1;
+   
         next=nullptr;
     }
     Node(const T value,Node<T>* nextPtr=nullptr)
@@ -97,7 +97,7 @@ public:
      bool pop(){
          if(isEmpty()) return false;
          else{
-             std::cout<<top->data<<std::endl;
+            
              Node<T>* tem=top;
              top=top->next;
              delete tem;
@@ -105,7 +105,7 @@ public:
              return true;
          }
     }
-    bool push(T &tem){
+    bool push(T tem){
         Node<T>* temp = new Node<T>(tem);
         temp->next=top;
         top=temp;
@@ -123,7 +123,7 @@ public:
     }
      T getTop()
     {
-        std::cout<<top->data<<std::endl;
+       
         return top->data;
         
     }

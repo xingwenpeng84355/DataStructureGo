@@ -27,7 +27,10 @@
 #include "bigNumber.h"
 #include "orderM.h"
 #include "reverseLinkLIst.h"
-#include "trees.h"
+//#include "trees.h"
+#include "treeMirror.h"
+#include "printMatrix.h"
+#include "printTree.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -218,6 +221,29 @@ list.append(7);
     list1.show();
     reverseLinkList<int>(&list1)->show();
    */
-    cout<<findSubTree(setUpTree(),setUpTree2(),setUpTree2());
+   // cout<<findSubTree(setUpTree(),setUpTree2(),setUpTree2());
+  
+  /*  treeNode* tree=setUpTree();
+    treesByMiddleOrder(tree);
+   */
+   // show(tree, 3, 0);
+   // treeMirrorByLoop(tree);
+ //   show(tree, 3, 0);
+
+  //  int arr[5][5]={{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5}};
+    //printMatrix(arr,5,5);
+    
+    queue<point> tree=printTree(setUpTree());
+    
+    while(!tree.empty()){
+        
+        std::cout<<tree.front().root->data<<std::endl;
+        tree.pop();
+        
+    }
+    
+    
+    
+    
     return 0;
 }
